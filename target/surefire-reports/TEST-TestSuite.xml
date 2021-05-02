@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="39.033" tests="21" errors="0" skipped="2" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="webdriver.chrome.driver" value="C:/chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\VijayWorkplace\OfflineWebsite.HybrideFrameWork\target\test-classes;C:\VijayWorkplace\OfflineWebsite.HybrideFrameWork\target\classes;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vijay Gadge\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Vijay Gadge\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Vijay Gadge\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Vijay Gadge\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Vijay Gadge\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Vijay Gadge\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Vijay Gadge\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Vijay Gadge\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Vijay Gadge\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Vijay Gadge\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Vijay Gadge\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Vijay Gadge\.m2\repository\jexcelapi\jxl\2.4.2\jxl-2.4.2.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\Vijay Gadge\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\Vijay Gadge\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\Vijay Gadge\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\Vijay Gadge\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Vijay Gadge\AppData\Local\Temp\surefire2900840604552241395\surefirebooter4819963946456623155.jar C:\Users\Vijay Gadge\AppData\Local\Temp\surefire2900840604552241395 2021-04-30T12-47-21_095-jvmRun1 surefire5672139130381067460tmp surefire_02900736826913034353tmp"/>
+    <property name="surefire.test.class.path" value="C:\VijayWorkplace\OfflineWebsite.HybrideFrameWork\target\test-classes;C:\VijayWorkplace\OfflineWebsite.HybrideFrameWork\target\classes;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Vijay Gadge\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Vijay Gadge\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Vijay Gadge\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Vijay Gadge\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Vijay Gadge\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Vijay Gadge\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Vijay Gadge\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Vijay Gadge\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Vijay Gadge\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Vijay Gadge\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Vijay Gadge\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Vijay Gadge\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Vijay Gadge\.m2\repository\jexcelapi\jxl\2.4.2\jxl-2.4.2.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\Vijay Gadge\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Users\Vijay Gadge\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\Vijay Gadge\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\Vijay Gadge\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\Vijay Gadge\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Vijay Gadge"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
+    <property name="basedir" value="C:\VijayWorkplace\OfflineWebsite.HybrideFrameWork"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Vijay Gadge\AppData\Local\Temp\surefire2900840604552241395\surefirebooter4819963946456623155.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="user.name" value="Vijay Gadge"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Vijay Gadge\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\VIJAYG~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="user.dir" value="C:\VijayWorkplace\OfflineWebsite.HybrideFrameWork"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Vijay Gadge\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_144\bin;;C:\sts-bundle\sts-3.9.0.RELEASE;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="login" classname="com.TestClasses.TestIndexPage1" time="4.626">
+    <system-out><![CDATA[30-04-2021 12:47:27 TestBase.java INFO  [main] TestBase.TestBase 37 - Initializing Browser
+30-04-2021 12:47:30 TestBase.java INFO  [main] TestBase.TestBase 40 - Chrome Browser Opened
+30-04-2021 12:47:32 TestBase.java INFO  [main] TestBase.TestBase 49 - JBK Offline Application URL Launched
+30-04-2021 12:47:33 TestDownloadsPage.java INFO  [main] TestClasses.TestDownloadsPage 38 - DashboardPage initialized
+30-04-2021 12:47:33 ClassITestListener.java INFO  [main] TestClasses.TestDownloadsPage 65 - Suit Started !!!!
+30-04-2021 12:47:33 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestDownloadsPage 25 - Test Case Started :login
+30-04-2021 12:47:33 TestBase.java INFO  [TestNG-test=Test-1] TestClasses.TestDownloadsPage 37 - Initializing Browser
+30-04-2021 12:47:35 TestBase.java INFO  [TestNG-test=Test-1] TestClasses.TestDownloadsPage 40 - Chrome Browser Opened
+30-04-2021 12:47:37 TestBase.java INFO  [TestNG-test=Test-1] TestClasses.TestDownloadsPage 49 - JBK Offline Application URL Launched
+30-04-2021 12:47:37 TestIndexPage1.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 17 - login to the application
+30-04-2021 12:47:37 TestIndexPage1.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 22 - User Successfully login into the Application
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 15556
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 30, 2021 12:47:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 38973
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Apr 30, 2021 12:47:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyTitle" classname="com.TestClasses.TestDownloadsPage" time="0.016">
+    <system-out><![CDATA[30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 31 - Test Case Success :login
+30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-2] TestClasses.TestIndexPage1 25 - Test Case Started :verifyTitle
+30-04-2021 12:47:38 TestDownloadsPage.java INFO  [TestNG-test=Test-2] TestClasses.TestIndexPage1 51 - verifyTitle() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="varifyUsersText" classname="com.TestClasses.TestDownloadsPage" time="0.061">
+    <system-out><![CDATA[30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-2] TestClasses.TestIndexPage1 31 - Test Case Success :verifyTitle
+30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :varifyUsersText
+30-04-2021 12:47:38 TestDownloadsPage.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 60 - varifyUsersText() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="varifyHome" classname="com.TestClasses.TestDownloadsPage" time="0.047">
+    <system-out><![CDATA[30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 31 - Test Case Success :varifyUsersText
+30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :varifyHome
+30-04-2021 12:47:38 TestDownloadsPage.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 69 - varifyHome() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="varifyJBKTextInNavBar" classname="com.TestClasses.TestDownloadsPage" time="0.047">
+    <system-out><![CDATA[30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 31 - Test Case Success :varifyHome
+30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :varifyJBKTextInNavBar
+30-04-2021 12:47:38 TestDownloadsPage.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 78 - varifyJBKTextInNavBar() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="varifyLeftBar" classname="com.TestClasses.TestDownloadsPage" time="0.078">
+    <system-out><![CDATA[30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 31 - Test Case Success :varifyJBKTextInNavBar
+30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :varifyLeftBar
+30-04-2021 12:47:38 TestDownloadsPage.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 95 - varifyLeftBar() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="varifyFooter" classname="com.TestClasses.TestDownloadsPage" time="0.063">
+    <system-out><![CDATA[30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 31 - Test Case Success :varifyLeftBar
+30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :varifyFooter
+30-04-2021 12:47:38 TestDownloadsPage.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 105 - varifyFooter() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="varifyLogoutText" classname="com.TestClasses.TestDownloadsPage" time="0.062">
+    <system-out><![CDATA[30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 31 - Test Case Success :varifyFooter
+30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :varifyLogoutText
+30-04-2021 12:47:38 TestDownloadsPage.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 114 - varifyLogoutText() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="varifyDownloadsListText" classname="com.TestClasses.TestDownloadsPage" time="0.063">
+    <system-out><![CDATA[30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 31 - Test Case Success :varifyLogoutText
+30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :varifyDownloadsListText
+30-04-2021 12:47:38 TestDownloadsPage.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 123 - varifyDownloadsListText() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="clickLogoIMG" classname="com.TestClasses.TestDownloadsPage" time="0.344">
+    <system-out><![CDATA[30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 31 - Test Case Success :varifyDownloadsListText
+30-04-2021 12:47:38 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :clickLogoIMG
+30-04-2021 12:47:39 TestDownloadsPage.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 135 - clickLogoIMG() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="verifyTextInTable" classname="com.TestClasses.TestDownloadsPage" time="0">
+    <skipped message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=90.0.4430.93)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-O3R1SP1&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\VIJAYG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 07c16c6aee27e4f750ba495dabb63cdc"/>
+    <system-out><![CDATA[30-04-2021 12:47:39 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 31 - Test Case Success :clickLogoIMG
+30-04-2021 12:47:39 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :verifyTextInTable
+Sr Name vendor Version 32bit 64bit Common Official Source
+*For prevoius and latest releases
+01 Java Development Kit (JDK) 1.8 32bit 64bit Official Website
+02 Selenium Server Standalon Jar 2.52.0 3.9.0 2.52.0 3.9.0 Official Website
+03 Selenium Server Source Jar 2.46.0 Common Official Website
+04 Google Chrome 76.0 32bit 64bit Official Website
+05 Google Chrome Driver 76.0 Common Official Website
+06 Mozilla Firefox 69.0 32bit 64bit Official Website
+07 Gecko Driver for Latest firefox 0.24.0 32bit 64bit Official Website
+30-04-2021 12:47:43 ClassIRetryAnalayzer.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 21 - This @Test is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@77cd7a0] output={null}]
+]]></system-out>
+  </testcase>
+  <testcase name="verifyTextInTable" classname="com.TestClasses.TestDownloadsPage" time="0">
+    <skipped message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=90.0.4430.93)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-O3R1SP1&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\VIJAYG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 07c16c6aee27e4f750ba495dabb63cdc"/>
+    <system-out><![CDATA[30-04-2021 12:47:43 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 55 - Test Case Skipped :verifyTextInTable
+30-04-2021 12:47:43 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :verifyTextInTable
+Sr Name vendor Version 32bit 64bit Common Official Source
+*For prevoius and latest releases
+01 Java Development Kit (JDK) 1.8 32bit 64bit Official Website
+02 Selenium Server Standalon Jar 2.52.0 3.9.0 2.52.0 3.9.0 Official Website
+03 Selenium Server Source Jar 2.46.0 Common Official Website
+04 Google Chrome 76.0 32bit 64bit Official Website
+05 Google Chrome Driver 76.0 Common Official Website
+06 Mozilla Firefox 69.0 32bit 64bit Official Website
+07 Gecko Driver for Latest firefox 0.24.0 32bit 64bit Official Website
+30-04-2021 12:47:47 ClassIRetryAnalayzer.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 21 - This @Test is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@77cd7a0] output={null}]
+]]></system-out>
+  </testcase>
+  <testcase name="verifyTextInTable" classname="com.TestClasses.TestDownloadsPage" time="3.346">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=90.0.4430.93)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-O3R1SP1&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\VIJAYG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 07c16c6aee27e4f750ba495dabb63cdc" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-O3R1SP1', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\VIJAYG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 07c16c6aee27e4f750ba495dabb63cdc
+	at com.TestClasses.TestDownloadsPage.verifyTextInTable(TestDownloadsPage.java:141)
+]]></failure>
+    <system-out><![CDATA[30-04-2021 12:47:47 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 55 - Test Case Skipped :verifyTextInTable
+30-04-2021 12:47:47 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 25 - Test Case Started :verifyTextInTable
+Sr Name vendor Version 32bit 64bit Common Official Source
+*For prevoius and latest releases
+01 Java Development Kit (JDK) 1.8 32bit 64bit Official Website
+02 Selenium Server Standalon Jar 2.52.0 3.9.0 2.52.0 3.9.0 Official Website
+03 Selenium Server Source Jar 2.46.0 Common Official Website
+04 Google Chrome 76.0 32bit 64bit Official Website
+05 Google Chrome Driver 76.0 Common Official Website
+06 Mozilla Firefox 69.0 32bit 64bit Official Website
+07 Gecko Driver for Latest firefox 0.24.0 32bit 64bit Official Website
+30-04-2021 12:47:50 ClassIRetryAnalayzer.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 21 - This @Test is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@77cd7a0] output={null}]
+]]></system-out>
+  </testcase>
+  <testcase name="verifyTextInTable" classname="com.TestClasses.TestDownloadsPage" time="3.357">
+    <failure message="invalid session id&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-O3R1SP1&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\VIJAYG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8094b1715a86cb962a588632294f1065" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-O3R1SP1', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\VIJAYG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8094b1715a86cb962a588632294f1065
+]]></failure>
+    <system-out><![CDATA[30-04-2021 12:47:50 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 36 - Test Case Failed :verifyTextInTable
+]]></system-out>
+  </testcase>
+  <testcase name="clickImages" classname="com.TestClasses.TestDownloadsPage" time="11.531">
+    <system-out><![CDATA[30-04-2021 12:47:50 ClassITestListener.java INFO  [TestNG-test=Test-3] TestClasses.TestIndexPage1 36 - Test Case Failed :verifyTextInTable
+30-04-2021 12:47:50 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 25 - Test Case Started :clickImages
+Parent URL :file:///C:/Offline%20Website/Offline%20Website/pages/examples/downloads.html
+file:///C:/Offline%20Website/Offline%20Website/pages/images/jdk.png
+Child URL :file:///C:/Offline%20Website/Offline%20Website/pages/images/jdk.png
+Child URL :file:///C://Offline%20Website//Offline%20Website/dist/img/user2-160x160.jpg
+file:///C:/Offline%20Website/Offline%20Website/pages/images/selenium.png
+Child URL :file:///C:/Offline%20Website/Offline%20Website/pages/images/selenium.png
+file:///C:/Offline%20Website/Offline%20Website/pages/images/selenium.png
+Child URL :file:///C:/Offline%20Website/Offline%20Website/pages/images/selenium.png
+file:///C:/Offline%20Website/Offline%20Website/pages/images/chrome.png
+Child URL :file:///C:/Offline%20Website/Offline%20Website/pages/images/chrome.png
+file:///C:/Offline%20Website/Offline%20Website/pages/images/chrome.png
+Child URL :file:///C:/Offline%20Website/Offline%20Website/pages/images/chrome.png
+file:///C:/Offline%20Website/Offline%20Website/pages/images/firefox.png
+Child URL :file:///C:/Offline%20Website/Offline%20Website/pages/images/firefox.png
+file:///C:/Offline%20Website/Offline%20Website/pages/images/firefox.png
+Child URL :file:///C:/Offline%20Website/Offline%20Website/pages/images/firefox.png
+30-04-2021 12:48:01 TestDownloadsPage.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 149 - clickImages() ->passed
+]]></system-out>
+    <system-err><![CDATA[Exception in thread "TestNG-test=Test-3" org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-O3R1SP1', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\VIJAYG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8094b1715a86cb962a588632294f1065
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.Listener.ClassITestListener.onTestFailure(ClassITestListener.java:40)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1042)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]></system-err>
+  </testcase>
+  <testcase name="clickHome" classname="com.TestClasses.TestDownloadsPage" time="0.205">
+    <system-out><![CDATA[30-04-2021 12:48:01 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 31 - Test Case Success :clickImages
+30-04-2021 12:48:02 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 25 - Test Case Started :clickHome
+30-04-2021 12:48:02 TestDownloadsPage.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 158 - clickHome() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="clickJBKTextInNavBar" classname="com.TestClasses.TestDownloadsPage" time="0.428">
+    <system-out><![CDATA[30-04-2021 12:48:02 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 31 - Test Case Success :clickHome
+30-04-2021 12:48:02 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 25 - Test Case Started :clickJBKTextInNavBar
+30-04-2021 12:48:02 TestDownloadsPage.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 169 - clickJBKTextInNavBar() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="clickOnlineText" classname="com.TestClasses.TestDownloadsPage" time="0.135">
+    <system-out><![CDATA[30-04-2021 12:48:02 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 31 - Test Case Success :clickJBKTextInNavBar
+30-04-2021 12:48:02 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 25 - Test Case Started :clickOnlineText
+30-04-2021 12:48:02 TestDownloadsPage.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 178 - clickOnlineText() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="clickFooter" classname="com.TestClasses.TestDownloadsPage" time="1.574">
+    <system-out><![CDATA[30-04-2021 12:48:02 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 31 - Test Case Success :clickOnlineText
+30-04-2021 12:48:02 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 25 - Test Case Started :clickFooter
+Parent URL :file:///C:/Offline%20Website/Offline%20Website/pages/examples/downloads.html#
+child URL :https://www.javabykiran.com/
+30-04-2021 12:48:04 TestDownloadsPage.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 210 - clickFooter() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="clickLogout" classname="com.TestClasses.TestDownloadsPage" time="0.34">
+    <system-out><![CDATA[30-04-2021 12:48:04 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 31 - Test Case Success :clickFooter
+30-04-2021 12:48:04 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 25 - Test Case Started :clickLogout
+30-04-2021 12:48:04 TestDownloadsPage.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 219 - clickLogout() ->passed
+]]></system-out>
+  </testcase>
+  <testcase name="verifyLogoutText" classname="com.TestClasses.TestDownloadsPage" time="0.056">
+    <system-out><![CDATA[30-04-2021 12:48:04 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 31 - Test Case Success :clickLogout
+30-04-2021 12:48:04 ClassITestListener.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 25 - Test Case Started :verifyLogoutText
+30-04-2021 12:48:04 TestDownloadsPage.java INFO  [TestNG-test=Test-1] TestClasses.TestIndexPage1 227 - verifyLogoutText() ->passed
+]]></system-out>
+  </testcase>
+</testsuite>

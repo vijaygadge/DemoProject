@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel ="methods" thread-count="3">
+    
+    <listeners>
+        <listener class-name="com.Listener.ClassITestListener"></listener>
+        <listener class-name="com.Listener.TransformListener"></listener>
+    </listeners>
+  <test name="Test">
+      <classes>
+<!--           <class name="com.TestClasses.TestIndexPage"/> -->
+<!--           <class name="com.TestClasses.TestRegisterPage"/> -->
+<!--           <class name="com.TestClasses.TestDashboardPage"/> -->
+<!--           <class name="com.TestClasses.TestUsersPage"/> -->
+<!--           <class name="com.TestClasses.TestAddUserPage"/> -->
+<!--           <class name="com.TestClasses.TestOperatorsPage"/> -->
+		  <class name="com.TestClasses.TestDownloadsPage"/>
+          <class name="com.TestClasses.TestIndexPage1"/>
+      </classes>
+      
+     <!--  <packages>
+          <package name="com.TestClasses"></package>
+      </packages> -->
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
