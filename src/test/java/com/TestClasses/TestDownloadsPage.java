@@ -4,7 +4,6 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.Set;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +11,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.TestBase.TestBase;
@@ -25,7 +26,8 @@ public class TestDownloadsPage extends TestBase
 	DashboardPage dap=null;
 	DownloadsPage dp=null;
 	private Logger log=Logger.getLogger(TestDownloadsPage.class);
-	@BeforeSuite
+	
+	@BeforeTest
 	public void setdp()
 	{
 		driver=initialization();
@@ -38,7 +40,7 @@ public class TestDownloadsPage extends TestBase
 		dp=dap.clickOnDownloadsPage();
 		log.info("DashboardPage initialized");
 	}
-	@AfterSuite()
+	@AfterTest()
 	public void close()
 	{
 		driver.quit();
@@ -49,7 +51,6 @@ public class TestDownloadsPage extends TestBase
 	{
 		String title=driver.getTitle();
 		Assert.assertEquals(title,"JavaByKiran | Downloads");
-		log.info("verifyTitle() ->passed");
 	}
 	
 	@Test(priority=2,dependsOnMethods="verifyTitle")
@@ -58,7 +59,6 @@ public class TestDownloadsPage extends TestBase
 		String h1 = dp.headingText();
 		String h="Downloads";
 		Assert.assertEquals(h1,h);
-		log.info("varifyUsersText() ->passed");
 	}
 	
 	@Test(priority=3,dependsOnMethods="verifyTitle")
@@ -67,7 +67,6 @@ public class TestDownloadsPage extends TestBase
 		String home = dp.olTagText();
 		String home2="Home Downloads";
 		Assert.assertEquals(home,home2);
-		log.info("varifyHome() ->passed");
 	}
 	
 	@Test(priority=4,dependsOnMethods="verifyTitle")
@@ -76,7 +75,6 @@ public class TestDownloadsPage extends TestBase
 		String A = dp.jbkText();
 		String B="Java By Kiran";
 		Assert.assertEquals(A,B);
-		log.info("varifyJBKTextInNavBar() ->passed");
 	}
 	
 	@Test(priority=5,dependsOnMethods="verifyTitle")
@@ -93,7 +91,6 @@ public class TestDownloadsPage extends TestBase
 				"Downloads\n" + 
 				"Logout";
 		Assert.assertEquals(A,B);
-		log.info("varifyLeftBar() ->passed");
 	}
 	
 	@Test(priority=6,dependsOnMethods="verifyTitle")
@@ -103,7 +100,6 @@ public class TestDownloadsPage extends TestBase
 		String t2="Design for Selenium Automation Test V 2.3.0\n" + 
 				"Copyright © 2005-2019 JavaByKiran. All rights reserved.";
 		Assert.assertEquals(t1,t2);
-		log.info("varifyFooter() ->passed");
 	}
 	
 	@Test(priority=7)
@@ -112,7 +108,6 @@ public class TestDownloadsPage extends TestBase
 		String logout =dp.verifyLogout();
 		String logout2="LOGOUT";
 		Assert.assertEquals(logout,logout2);
-		log.info("varifyLogoutText() ->passed");
 	}
 	
 	@Test(priority=8)
@@ -121,7 +116,6 @@ public class TestDownloadsPage extends TestBase
 		String text1=dp.verifyUserListText();
 		String text2="Downloads List";
 		Assert.assertEquals(text1,text2);
-		log.info("varifyDownloadsListText() ->passed");
 	}
 	
 	@Test(priority=9)
@@ -133,22 +127,18 @@ public class TestDownloadsPage extends TestBase
 		Robot robot=new Robot();
 		robot.keyPress(KeyEvent.VK_DOWN);
 		robot.keyPress(KeyEvent.VK_ENTER);
-		log.info("clickLogoIMG() ->passed");
 	}
 	
 	@Test(priority=10)
 	public void verifyTextInTable()
 	{	
 		dp.textInTable();
-		log.info("verifyTextInTable() ->passed");
-		Assert.assertTrue(true);
 	}
 	
 	@Test(priority=11)
 	public void clickImages() throws AWTException
 	{	
 		dp.getImages();
-		log.info("clickImages() ->passed");
 	}
 	
 	@Test(priority=12,dependsOnMethods="verifyTitle")
@@ -157,7 +147,6 @@ public class TestDownloadsPage extends TestBase
 		dp.clickHome();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C:/Offline%20Website/Offline%20Website/pages/examples/downloads.html#");
-		log.info("clickHome() ->passed");
 	}
 	
 	@Test(priority=13,dependsOnMethods="verifyTitle")
@@ -166,9 +155,8 @@ public class TestDownloadsPage extends TestBase
 		//driver.findElement(By.xpath("//b[text()='Java By Kiran']")).click();
 		dp.clickjbkText();
 		String actual=driver.getCurrentUrl();
-		Assert.assertEquals(actual,"file:///C:/Offline%20Website/Offline%20Website/pages/examples/dashboard.html");
 		driver.navigate().back();
-		log.info("clickJBKTextInNavBar() ->passed");
+		Assert.assertEquals(actual,"file:///C:/Offline%20Website/Offline%20Website/pages/examples/dashboard.html");
 	}
 	
 	@Test(priority=14,dependsOnMethods="verifyTitle")
@@ -177,7 +165,6 @@ public class TestDownloadsPage extends TestBase
 		dp.clickOnlineText();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C:/Offline%20Website/Offline%20Website/pages/examples/downloads.html#");
-		log.info("clickOnlineText() ->passed");
 	}
 	
 	@Test(priority=15,dependsOnMethods="verifyTitle")
@@ -209,7 +196,7 @@ public class TestDownloadsPage extends TestBase
 					driver.switchTo().window(parentId);
 				}
 			}
-		}log.info("clickFooter() ->passed");
+		}
 	}
 	
 	@Test(priority=16)
@@ -218,7 +205,6 @@ public class TestDownloadsPage extends TestBase
 		dp.clickLogout();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C:/Offline%20Website/Offline%20Website/pages/examples/logout.html");
-		log.info("clickLogout() ->passed");
 	}
 	
 	@Test(priority=17,dependsOnMethods="clickLogout")
@@ -226,6 +212,5 @@ public class TestDownloadsPage extends TestBase
 	{	
 		String logoutText=dp.logoutText();
 		Assert.assertEquals(logoutText,"Logout successfully");
-		log.info("verifyLogoutText() ->passed");
 	}
 }

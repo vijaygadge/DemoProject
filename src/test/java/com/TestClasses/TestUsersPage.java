@@ -24,6 +24,8 @@ public class TestUsersPage extends TestBase
 	WebDriver driver;
 	UsersPage up=null;
 	DashboardPage dp=null;
+	private Logger log=Logger.getLogger(TestUsersPage.class);
+	
 	@BeforeSuite
 	public void setUp()
 	{
@@ -47,7 +49,6 @@ public class TestUsersPage extends TestBase
 	{
 		String title=driver.getTitle();
 		Assert.assertEquals(title,"JavaByKiran | User");
-		log.info("verifyTitle()->passed");
 	}
 	
 	@Test(priority=2,dependsOnMethods="verifyTitle")
@@ -56,7 +57,6 @@ public class TestUsersPage extends TestBase
 		String h1 = up.headingText();
 		String h="Users";
 		Assert.assertEquals(h1,h);
-		log.info("varifyUsersText()->passed");
 	}
 	
 	@Test(priority=3,dependsOnMethods="verifyTitle")
@@ -65,7 +65,6 @@ public class TestUsersPage extends TestBase
 		String home = up.olTagText();
 		String home2="Home Users";
 		Assert.assertEquals(home,home2);
-		log.info("varifyHome()->passed");
 	}
 	
 	@Test(priority=4,dependsOnMethods="verifyTitle")
@@ -74,7 +73,6 @@ public class TestUsersPage extends TestBase
 		String A = up.jbkText();
 		String B="Java By Kiran";
 		Assert.assertEquals(A,B);
-		log.info("varifyJBKTextInNavBar()->passed");
 	}
 	
 	@Test(priority=5,dependsOnMethods="verifyTitle")
@@ -91,7 +89,6 @@ public class TestUsersPage extends TestBase
 				"Downloads\n" + 
 				"Logout";
 		Assert.assertEquals(A,B);
-		log.info("varifyLeftBar()->passed");
 	}
 	
 	@Test(priority=6,dependsOnMethods="verifyTitle")
@@ -101,7 +98,6 @@ public class TestUsersPage extends TestBase
 		String t2="Design for Selenium Automation Test V 2.3.0\n" + 
 				"Copyright © 2005-2019 JavaByKiran. All rights reserved.";
 		Assert.assertEquals(t1,t2);
-		log.info("varifyFooter()->passed");
 	}
 	
 	@Test(priority=7)
@@ -110,7 +106,6 @@ public class TestUsersPage extends TestBase
 		String logout =up.verifyLogout();
 		String logout2="LOGOUT";
 		Assert.assertEquals(logout,logout2);
-		log.info("varifyLogoutText()->passed");
 	}
 	
 	@Test(priority=8)
@@ -119,7 +114,6 @@ public class TestUsersPage extends TestBase
 		String text1=up.verifyUserListText();
 		String text2="User List";
 		Assert.assertEquals(text1,text2);
-		log.info("varifyUserListText()->passed");
 	}
 	
 	@Test(priority=9)
@@ -129,7 +123,6 @@ public class TestUsersPage extends TestBase
 		String t1=up.verifyAddUserText();
 		String t2="Add User";
 		Assert.assertEquals(t1,t2);
-		log.info("varifyAddUser()->passed");
 	}
 	
 	@Test(priority=10)
@@ -138,7 +131,6 @@ public class TestUsersPage extends TestBase
 		String d1=up.verifydeleteText();
 		String d2="Delete";
 		Assert.assertEquals(d1,d2);
-		log.info("varifyDeleteDefaultUser()->passed");
 	}
 	
 	@Test(priority=11,dependsOnMethods="verifyTitle")
@@ -147,7 +139,6 @@ public class TestUsersPage extends TestBase
 		up.clickHome();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/users.html#");
-		log.info("clickHome()->passed");
 	}
 	
 	@Test(priority=12,dependsOnMethods="verifyTitle")
@@ -156,9 +147,8 @@ public class TestUsersPage extends TestBase
 		//driver.findElement(By.xpath("//b[text()='Java By Kiran']")).click();
 		up.clickjbkText();
 		String actual=driver.getCurrentUrl();
-		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/dashboard.html");
 		driver.navigate().back();
-		log.info("clickJBKTextInNavBar()->passed");
+		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/dashboard.html");
 	}
 	
 	@Test(priority=13,dependsOnMethods="verifyTitle")
@@ -167,7 +157,6 @@ public class TestUsersPage extends TestBase
 		up.clickOnlineText();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/users.html#");
-		log.info("clickOnlineText()->passed");
 	}
 	
 	@Test(priority=14)
@@ -178,7 +167,6 @@ public class TestUsersPage extends TestBase
 		Alert al=driver.switchTo().alert();
 		Thread.sleep(1000);
 		al.accept();// to click on OK
-		log.info("clickDeleteDefaultUser()->passed");
 	}
 	
 	@Test(priority=15)
@@ -190,7 +178,6 @@ public class TestUsersPage extends TestBase
 		Thread.sleep(1000);
 		al.accept();// to click on OK
 		al.accept();// to click on OK
-		log.info("clickNormalUserToDelete()->passed");
 	}
 	
 	@Test(priority=16)
@@ -204,14 +191,12 @@ public class TestUsersPage extends TestBase
 		robot.keyPress(KeyEvent.VK_DOWN);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		Thread.sleep(2000);
-		log.info("clickIMG()->passed");
 	}
 	
 	@Test(priority=17)
 	public void verifyTextInTable()
 	{
 		up.textInTable();
-		log.info("verifyTextInTable()->passed");
 	}
 	
 	@Test(priority=18)
@@ -221,7 +206,6 @@ public class TestUsersPage extends TestBase
 		System.out.println("Tooltip Text : "+t1);
 		String t2="Click to Delete";
 		Assert.assertEquals(t1,t2);
-		log.info("verifytoggleElementText()->passed");
 	}
 	
 	@Test(priority=19)
@@ -253,7 +237,7 @@ public class TestUsersPage extends TestBase
 					driver.switchTo().window(parentURL);
 				}
 			}
-		}log.info("verifyAllLinks_SwitchOnLinks()->passed");
+		}
 	}
 	
 	@Test(priority=20)
@@ -262,7 +246,6 @@ public class TestUsersPage extends TestBase
 		up.clickLogout();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/logout.html");
-		log.info("clickLogout()->passed");
 	}
 	
 	@Test(priority=21,dependsOnMethods="clickLogout")
@@ -270,6 +253,5 @@ public class TestUsersPage extends TestBase
 	{	
 		String logoutText=up.logoutText();
 		Assert.assertEquals(logoutText,"Logout successfully");
-		log.info("verifyLogoutText()->passed");
 	}
 }

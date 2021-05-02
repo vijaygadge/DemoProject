@@ -14,9 +14,6 @@ public class TestIndexPage1 extends TestBase
 	public void login()
 	{
 		driver=initialization();
-		
-		log.info("login to the application");
-		
 		driver.findElement(By.id("email")).sendKeys(readProperty("uname"));
 		driver.findElement(By.id("password")).sendKeys(readProperty("pass"));
 		driver.findElement(By.xpath("//button")).click();

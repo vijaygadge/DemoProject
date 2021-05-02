@@ -14,26 +14,24 @@ import com.TestBase.TestBase;
 
 public class ClassITestListener extends TestBase implements ITestListener
 {
-	public ClassITestListener()
-	{
-		log=Logger.getLogger(ClassITestListener.class);
-	}
 
+	private Logger log=Logger.getLogger(ClassITestListener.class);
+	
 	@Override
 	public void onTestStart(ITestResult result) {
 		
-		log.info("Test Case Started :"+result.getName());
+		log.info("Test Case Started :"+result.getTestClass()+""+result.getName());
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		
-		log.info("Test Case Success :"+result.getName());
+		log.info("Test Case Success :"+result.getTestClass()+""+result.getName());
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		log.info("Test Case Failed :"+result.getName());
+		log.info("Test Case Failed :"+result.getTestClass()+""+result.getName());
 		
 		SimpleDateFormat sdf=new SimpleDateFormat("ddMMyyyyhhmmss");
 		TakesScreenshot ts=(TakesScreenshot)TestBase.driver;
@@ -46,13 +44,13 @@ public class ClassITestListener extends TestBase implements ITestListener
 		catch(Exception e)
 		{
 			log.error("ScreenShot is not Saved");
-			log.error(e.getClass().getName());
+			log.error(""+result.getTestClass()+""+result.getName());
 		}
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		log.info("Test Case Skipped :"+result.getName());
+		log.info("Test Case Skipped :"+result.getTestClass()+""+result.getName());
 	}
 
 	@Override

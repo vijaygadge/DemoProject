@@ -2,19 +2,15 @@ package com.TestBase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+
 public class TestBase 
 {
 	public static WebDriver driver=null;
-	public static Logger log=null;
-	public TestBase()
-	{
-		log=Logger.getLogger(TestBase.class);
-	}
+	private Logger log=Logger.getLogger(TestBase.class);
 	
 	public String readProperty(String key)
 	{
@@ -46,7 +42,7 @@ public class TestBase
 			log.info("Chrome Driver File is not available");
 		}
 			driver.get(readProperty("url"));
-			log.info("JBK Offline Application URL Launched");
+			log.info("JBK Offline Website URL Launched");
 			return driver;
 		
 	}

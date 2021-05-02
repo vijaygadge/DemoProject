@@ -23,12 +23,12 @@ public class TestDashboardPage extends TestBase
 	IndexPage ip=null;
 	DashboardPage dp=null;
 	String parentId=null;
+	private Logger log=Logger.getLogger(TestDashboardPage.class);
 	
 	@BeforeSuite
 	public void setUp()
 	{
 		driver=initialization();
-		log=Logger.getLogger(TestDashboardPage.class);
 		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("123456");
 		ip=new IndexPage(driver);
@@ -47,7 +47,6 @@ public class TestDashboardPage extends TestBase
 	{
 		String title=driver.getTitle();
 		Assert.assertEquals(title,"JavaByKiran | Dashboard");
-		log.info("verifyTitle()->passed");
 	}
 	
 	@Test(priority=1,dependsOnMethods="verifyTitle")
@@ -56,7 +55,6 @@ public class TestDashboardPage extends TestBase
 		String h1 = driver.getCurrentUrl();
 		String h="file:///C://Offline%20Website//Offline%20Website/pages/examples/dashboard.html";
 		Assert.assertEquals(h1,h);
-		log.info("verifyCurrentURL()->passed");
 	}
 	
 	@Test(priority=2,dependsOnMethods="verifyCurrentURL")
@@ -66,7 +64,6 @@ public class TestDashboardPage extends TestBase
 		String h1 = dp.headingText();
 		String h="Dashboard Courses Offered";
 		Assert.assertEquals(h1,h);
-		log.info("varifyH1Tag()->passed");
 	}
 	
 	@Test(priority=3)
@@ -76,7 +73,6 @@ public class TestDashboardPage extends TestBase
 		String logout = dp.logoutText1();
 		String logout2="LOGOUT";
 		Assert.assertEquals(logout,logout2);
-		log.info("varifyLogoutText()->passed");
 	}
 	
 	@Test(priority=4)
@@ -86,7 +82,6 @@ public class TestDashboardPage extends TestBase
 		String home = dp.olTagText();
 		String home2="Home Dashboard";
 		Assert.assertEquals(home,home2);
-		log.info("varifyHome()->passed");
 	}
 	
 	@Test(priority=5)
@@ -96,7 +91,6 @@ public class TestDashboardPage extends TestBase
 		String A = dp.jbkText();
 		String B="Java By Kiran";
 		Assert.assertEquals(A,B);
-		log.info("varifyJBKTextInNavBar()->passed");
 	}
 	
 	@Test(priority=6)
@@ -114,7 +108,6 @@ public class TestDashboardPage extends TestBase
 				"Downloads\n" + 
 				"Logout";
 		Assert.assertEquals(A,B);
-		log.info("varifyLeftBar()->passed");
 	}
 	
 	@Test(priority=7)
@@ -125,7 +118,6 @@ public class TestDashboardPage extends TestBase
 		String t2="Design for Selenium Automation Test V 2.3.0\n" + 
 				"Copyright © 2005-2019 JavaByKiran. All rights reserved.";
 		Assert.assertEquals(t1,t2);
-		log.info("varifyFooter()->passed");
 	}
 	
 	@Test(priority=8)
@@ -135,7 +127,6 @@ public class TestDashboardPage extends TestBase
 		String f1= dp.verifyCourseSelenium();
 		String f2="Selenium\n"+"Automation Testing";
 		Assert.assertEquals(f1,f2);
-		log.info("varifySelenium()->passed");
 	}
 	
 	@Test(priority=9)
@@ -156,7 +147,6 @@ public class TestDashboardPage extends TestBase
 				"Web Development\n" + 
 				"More info";
 		Assert.assertEquals(f1,f2);
-		log.info("varifyRHSContent()->passed");
 	}
 	
 	@Test(priority=10)
@@ -177,7 +167,6 @@ public class TestDashboardPage extends TestBase
 		String php2="More info";
 	
 		Assert.assertEquals(php1+python1+softwareDev1+selenium1,php2+python2+softwareDev2+selenium2);
-		log.info("varifyMoreInfo()->passed");
 	}
 
 	@Test(priority=11,dependsOnMethods="verifyTitle")
@@ -186,7 +175,6 @@ public class TestDashboardPage extends TestBase
 		dp.clickHome();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/dashboard.html#");
-		log.info("clickHome()->passed");
 	}
 	
 	@Test(priority=12,dependsOnMethods="verifyTitle")
@@ -196,7 +184,6 @@ public class TestDashboardPage extends TestBase
 		dp.clickjbkText();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/dashboard.html");
-		log.info("clickJBKTextInNavBar()->passed");
 	}
 	
 	@Test(priority=13,dependsOnMethods="verifyTitle")
@@ -205,7 +192,6 @@ public class TestDashboardPage extends TestBase
 		dp.clickOnlineText();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/dashboard.html#");
-		log.info("clickOnlineText()->passed");
 	}
 	
 	@Test(priority=14)
@@ -326,7 +312,6 @@ public class TestDashboardPage extends TestBase
 	public void clickLogoutButton()
 	{
 		dp.clickLogoutButton();
-		log.info("clickLogoutButton()->passed");
 	}
 	
 	@Test(priority=18,dependsOnMethods="clickLogoutButton")
@@ -334,6 +319,5 @@ public class TestDashboardPage extends TestBase
 	{	
 		String logoutText=dp.logoutText2();
 		Assert.assertEquals(logoutText,"Logout successfully");
-		log.info("verifyLogoutText()->passed");
 	}
 }

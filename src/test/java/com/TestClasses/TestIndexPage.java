@@ -24,13 +24,14 @@ public class TestIndexPage extends TestBase
 	IndexPage ip=null;
 	DashboardPage dp=null;
 	RegisterPage rp=null;
+	private Logger log=Logger.getLogger(TestIndexPage.class);
 	
 	@BeforeSuite
 	public void setUp()
 	{
 		driver=initialization();
-		log=Logger.getLogger(TestIndexPage.class);
 		ip=new IndexPage(driver);
+		log.info("Welcome on IndexPage");
 	}
 	@AfterSuite
 	public void close()
@@ -44,7 +45,6 @@ public class TestIndexPage extends TestBase
 		String actualText=driver.getCurrentUrl();
 		String expectedText="file:///C://Offline%20Website//Offline%20Website/index.html";
 		Assert.assertEquals(actualText, expectedText);
-		log.info("verifyCurrentURL()->passed");
 	}
 	
 	@Test(priority=1)
@@ -53,21 +53,18 @@ public class TestIndexPage extends TestBase
 		String actualText=ip.boldText();
 		String expectedText="Java By Kiran";
 		Assert.assertEquals(actualText, expectedText);
-		log.info("logoText()->passed");
 	}
 	
 	@Test(priority=2)
 	public void clickOnLogo() throws InterruptedException
 	{
 		ip.clickBoldText();
-		log.info("clickOnLogo()->passed");
 	}
 	
 	@Test(priority=3)
 	public void clickOnCoursesText() throws InterruptedException
 	{
 		ip.clickCoursesText();
-		log.info("clickOnCoursesText()->passed");
 	}
 	
 	@Test(priority=4)
@@ -76,7 +73,6 @@ public class TestIndexPage extends TestBase
 		String actualText2=ip.coursesText();
 		String expectedText2="JAVA | SELENIUM | PYTHON";
 		Assert.assertEquals(actualText2, expectedText2);
-		log.info("coursesText()->passed");
 	}
 	
 	@Test(priority=5)
@@ -85,7 +81,6 @@ public class TestIndexPage extends TestBase
 		String actualText3=ip.headingText();
 		String expectedText3="Sign in to start your session";
 		Assert.assertEquals(actualText3, expectedText3);
-		log.info("headingText()->passed");
 	}
 	
 	@Test(priority=6)
@@ -94,7 +89,6 @@ public class TestIndexPage extends TestBase
 		String actualText4=ip.registerText();
 		String expectedText4="Register a new membership";
 		Assert.assertEquals(actualText4, expectedText4);
-		log.info("registerText()->passed");
 	}
 	
 	@Test(priority=7,dataProvider="loginData")
@@ -109,7 +103,6 @@ public class TestIndexPage extends TestBase
 		if(driver.getTitle().equals("JavaByKiran | Dashboard"))
 			dp.clickLogoutButton();
 		
-		log.info("TestLoginCredentials()->passed");
 	}
 	@DataProvider
 	  public String[][] loginData() throws Exception
@@ -128,7 +121,6 @@ public class TestIndexPage extends TestBase
 	public void directSignIn()
 	{
 		ip.clickLoginButton();
-		log.info("directSignIn()->passed");
 	}
 	
 	@Test(priority=9,dependsOnMethods="directSignIn",groups="ErrorText")
@@ -138,7 +130,6 @@ public class TestIndexPage extends TestBase
 		String actualText=ip.emailErrorText();
 		String expectedText="Please enter email as kiran@gmail.com";
 		Assert.assertEquals(actualText,expectedText);
-		log.info("verifyEmailErrorText()->passed");
 	}
 	
 	@Test(priority=10,dependsOnMethods="directSignIn",groups="ErrorText")
@@ -148,7 +139,6 @@ public class TestIndexPage extends TestBase
 		String actualText=ip.passwordErrorText();
 		String expectedText="Please enter password 123456";
 		Assert.assertEquals(actualText,expectedText);
-		log.info("verifyPasswordErrorText()->passed");
 	}
 	
 	@Test(priority=11)
@@ -175,7 +165,7 @@ public class TestIndexPage extends TestBase
 					System.out.println("Child Window"+driver.getCurrentUrl());
 					driver.close();
 				}driver.switchTo().window(parentId);
-			}log.info("clickIMG()->passed");
+			}
 		}catch(Exception e)
 		{
 			log.info(e.getMessage());

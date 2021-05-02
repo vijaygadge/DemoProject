@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="Suite"> -->
 <suite name="Suite" parallel ="methods" thread-count="3">
     
     <listeners>
@@ -14,6 +15,7 @@
 <!--           <class name="com.TestClasses.TestUsersPage"/> -->
 <!--           <class name="com.TestClasses.TestAddUserPage"/> -->
 <!--           <class name="com.TestClasses.TestOperatorsPage"/> -->
+<!--           <class name="com.TestClasses.TestUsefulLinksPage"/> -->
 		  <class name="com.TestClasses.TestDownloadsPage"/>
           <class name="com.TestClasses.TestIndexPage1"/>
       </classes>

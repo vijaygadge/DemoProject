@@ -21,12 +21,12 @@ public class TestRegisterPage extends TestBase
 	WebDriver driver;
 	RegisterPage rp=null;
 	IndexPage ip=null;
+	private Logger log=Logger.getLogger(TestRegisterPage.class);
 	
 	@BeforeSuite
 	public void setUp()
 	{
 		driver=initialization();
-		log=Logger.getLogger(TestRegisterPage.class);
 		ip=new IndexPage(driver);
 		rp=ip.clickToRegister();
 		log.info("RegisterPage Initialized");
@@ -43,7 +43,6 @@ public class TestRegisterPage extends TestBase
 		String actualText=driver.getCurrentUrl();
 		String expectedText="file:///C://Offline%20Website//Offline%20Website/pages/examples/register.html";
 		Assert.assertEquals(actualText, expectedText);
-		log.info("verifyCurrentURL() ->passed");
 	}
 	
 	@Test(priority=2)
@@ -52,7 +51,6 @@ public class TestRegisterPage extends TestBase
 		String actualText=rp.boldText();
 		String expectedText="Java By Kiran";
 		Assert.assertEquals(actualText,expectedText);
-		log.info("boldText() ->passed");
 	}
 	
 	@Test(priority=3)
@@ -61,7 +59,6 @@ public class TestRegisterPage extends TestBase
 		String actualText=rp.headingText();
 		String expectedText="Register a new membership";
 		Assert.assertEquals(actualText,expectedText);
-		log.info("headingText() ->passed");
 	}
 	
 	@Test(priority=4,dataProvider="registerDetails")
@@ -75,7 +72,6 @@ public class TestRegisterPage extends TestBase
 		Alert al= driver.switchTo().alert();
 		Thread.sleep(2000);
 		al.accept();
-		log.info("fillDetails() ->passed");
 	}
 	@DataProvider
 	public Object[][] registerDetails() throws Exception
@@ -104,7 +100,6 @@ public class TestRegisterPage extends TestBase
 		String actualText=rp.alreadyRegText();
 		String expectedText="I already have a membership";
 		Assert.assertEquals(actualText,expectedText);
-		log.info("alreadyRegText() ->passed");
 	}
 	
 	@Test(priority=6)//,dependsOnMethods="clickNewRegister")
@@ -112,7 +107,6 @@ public class TestRegisterPage extends TestBase
 	{
 		rp.clearFields();
 		rp.clickToSignIn();
-		log.info("signInToReg() ->passed");
 	}
 	
 	@Test(priority=7,dependsOnMethods="signInToReg",groups="ErrorText")
@@ -122,7 +116,6 @@ public class TestRegisterPage extends TestBase
 		String actualText=rp.nameError();
 		String expectedText="Please enter Name.";
 		Assert.assertEquals(actualText,expectedText);
-		log.info("verifyNameError() ->passed");
 	}
 	
 	@Test(priority=8,dependsOnMethods="signInToReg",groups="ErrorText")
@@ -132,7 +125,6 @@ public class TestRegisterPage extends TestBase
 		String actualText=rp.mobileNoError();
 		String expectedText="Please enter Mobile.";
 		Assert.assertEquals(actualText,expectedText);
-		log.info("verifyMobileNoError() ->passed");
 	}
 	
 	@Test(priority=9,dependsOnMethods="signInToReg",groups="ErrorText")
@@ -142,7 +134,6 @@ public class TestRegisterPage extends TestBase
 		String actualText=rp.emailError();
 		String expectedText="Please enter Email.";
 		Assert.assertEquals(actualText,expectedText);
-		log.info("verifyEmailError() ->passed");
 	}
 	
 	@Test(priority=10,dependsOnMethods="signInToReg",groups="ErrorText")
@@ -152,14 +143,12 @@ public class TestRegisterPage extends TestBase
 		String actualText=rp.passwordError();
 		String expectedText="Please enter Password.";
 		Assert.assertEquals(actualText,expectedText);
-		log.info("verifyPasswordError() ->passed");
 	}
 	
 	@Test(priority=11)//,dependsOnMethods="clickNewRegister")
 	public void clickOnAlreadyRegText()
 	{
 		rp.clickAlreadyReg();
-		log.info("clickOnAlreadyRegText() ->passed");
 	}
 	
 	@Test(priority=12,dependsOnMethods="clickOnAlreadyRegText")
@@ -168,6 +157,5 @@ public class TestRegisterPage extends TestBase
 		String actualText=driver.getCurrentUrl();
 		String expectedText="file:///C://Offline%20Website//Offline%20Website/index.html";
 		Assert.assertEquals(actualText, expectedText);
-		log.info("verifyCurrentURL2() ->passed");
 	}
 }

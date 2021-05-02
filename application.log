@@ -1,74 +1,57 @@
-2021-05-01 11:11:38,954  INFO [main] TestBase:37 - Initializing Browser
-2021-05-01 11:11:42,759  INFO [main] TestBase:40 - Chrome Browser Opened
-2021-05-01 11:11:47,284  INFO [main] TestBase:49 - JBK Offline Application URL Launched
-2021-05-01 11:11:50,592  INFO [main] TestDownloadsPage:39 - DashboardPage initialized
-2021-05-01 11:11:50,597  INFO [main] TestBase:65 - Suit Started !!!!
-2021-05-01 11:11:50,680  INFO [TestNG-test=Test-1] TestBase:25 - Test Case Started :login
-2021-05-01 11:11:50,681  INFO [TestNG-test=Test-1] TestBase:37 - Initializing Browser
-2021-05-01 11:11:54,038  INFO [TestNG-test=Test-1] TestBase:40 - Chrome Browser Opened
-2021-05-01 11:11:57,708  INFO [TestNG-test=Test-1] TestBase:49 - JBK Offline Application URL Launched
-2021-05-01 11:11:57,710  INFO [TestNG-test=Test-1] TestIndexPage1:18 - login to the application
-2021-05-01 11:12:01,597  INFO [TestNG-test=Test-1] TestIndexPage1:23 - User Successfully login into the Application
-2021-05-01 11:12:02,742  INFO [TestNG-test=Test-1] TestBase:31 - Test Case Success :login
-2021-05-01 11:12:02,757  INFO [TestNG-test=Test-2] TestBase:25 - Test Case Started :verifyTitle
-2021-05-01 11:12:02,773  INFO [TestNG-test=Test-2] TestDownloadsPage:52 - verifyTitle() ->passed
-2021-05-01 11:12:02,776  INFO [TestNG-test=Test-2] TestBase:31 - Test Case Success :verifyTitle
-2021-05-01 11:12:03,014  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :varifyUsersText
-2021-05-01 11:12:03,080  INFO [TestNG-test=Test-3] TestDownloadsPage:61 - varifyUsersText() ->passed
-2021-05-01 11:12:03,082  INFO [TestNG-test=Test-3] TestBase:31 - Test Case Success :varifyUsersText
-2021-05-01 11:12:03,085  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :varifyHome
-2021-05-01 11:12:03,131  INFO [TestNG-test=Test-3] TestDownloadsPage:70 - varifyHome() ->passed
-2021-05-01 11:12:03,133  INFO [TestNG-test=Test-3] TestBase:31 - Test Case Success :varifyHome
-2021-05-01 11:12:03,136  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :varifyJBKTextInNavBar
-2021-05-01 11:12:03,176  INFO [TestNG-test=Test-3] TestDownloadsPage:79 - varifyJBKTextInNavBar() ->passed
-2021-05-01 11:12:03,178  INFO [TestNG-test=Test-3] TestBase:31 - Test Case Success :varifyJBKTextInNavBar
-2021-05-01 11:12:03,182  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :varifyLeftBar
-2021-05-01 11:12:03,239  INFO [TestNG-test=Test-3] TestDownloadsPage:96 - varifyLeftBar() ->passed
-2021-05-01 11:12:03,241  INFO [TestNG-test=Test-3] TestBase:31 - Test Case Success :varifyLeftBar
-2021-05-01 11:12:03,244  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :varifyFooter
-2021-05-01 11:12:03,287  INFO [TestNG-test=Test-3] TestDownloadsPage:106 - varifyFooter() ->passed
-2021-05-01 11:12:03,289  INFO [TestNG-test=Test-3] TestBase:31 - Test Case Success :varifyFooter
-2021-05-01 11:12:03,291  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :varifyLogoutText
-2021-05-01 11:12:03,332  INFO [TestNG-test=Test-3] TestDownloadsPage:115 - varifyLogoutText() ->passed
-2021-05-01 11:12:03,334  INFO [TestNG-test=Test-3] TestBase:31 - Test Case Success :varifyLogoutText
-2021-05-01 11:12:03,336  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :varifyDownloadsListText
-2021-05-01 11:12:03,381  INFO [TestNG-test=Test-3] TestDownloadsPage:124 - varifyDownloadsListText() ->passed
-2021-05-01 11:12:03,383  INFO [TestNG-test=Test-3] TestBase:31 - Test Case Success :varifyDownloadsListText
-2021-05-01 11:12:03,385  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :clickLogoIMG
-2021-05-01 11:12:07,851  INFO [TestNG-test=Test-3] TestDownloadsPage:136 - clickLogoIMG() ->passed
-2021-05-01 11:12:07,860  INFO [TestNG-test=Test-3] TestBase:31 - Test Case Success :clickLogoIMG
-2021-05-01 11:12:07,866  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :verifyTextInTable
-2021-05-01 11:14:25,567  INFO [TestNG-test=Test-3] TestBase:21 - This @Test is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@520a3426] output={null}]
-2021-05-01 11:14:25,572  INFO [TestNG-test=Test-3] TestBase:55 - Test Case Skipped :verifyTextInTable
-2021-05-01 11:14:25,575  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :verifyTextInTable
-2021-05-01 11:14:31,038  INFO [TestNG-test=Test-3] TestBase:21 - This @Test is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@520a3426] output={null}]
-2021-05-01 11:14:31,040  INFO [TestNG-test=Test-3] TestBase:55 - Test Case Skipped :verifyTextInTable
-2021-05-01 11:14:31,042  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :verifyTextInTable
-2021-05-01 11:14:36,301  INFO [TestNG-test=Test-3] TestBase:21 - This @Test is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@520a3426] output={null}]
-2021-05-01 11:14:36,304  INFO [TestNG-test=Test-3] TestBase:55 - Test Case Skipped :verifyTextInTable
-2021-05-01 11:14:36,307  INFO [TestNG-test=Test-3] TestBase:25 - Test Case Started :verifyTextInTable
-2021-05-01 11:14:41,487  INFO [TestNG-test=Test-3] TestBase:21 - This @Test is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@520a3426] output={null}]
-2021-05-01 11:14:41,490  INFO [TestNG-test=Test-3] TestBase:36 - Test Case Failed :verifyTextInTable
-2021-05-01 11:14:41,507  INFO [TestNG-test=Test-3] TestBase:36 - Test Case Failed :verifyTextInTable
-2021-05-01 11:14:41,526  INFO [TestNG-test=Test-1] TestBase:25 - Test Case Started :clickImages
-2021-05-01 11:14:54,940  INFO [TestNG-test=Test-1] TestDownloadsPage:151 - clickImages() ->passed
-2021-05-01 11:14:54,942  INFO [TestNG-test=Test-1] TestBase:31 - Test Case Success :clickImages
-2021-05-01 11:14:54,944  INFO [TestNG-test=Test-1] TestBase:25 - Test Case Started :clickHome
-2021-05-01 11:14:55,184  INFO [TestNG-test=Test-1] TestDownloadsPage:160 - clickHome() ->passed
-2021-05-01 11:14:55,186  INFO [TestNG-test=Test-1] TestBase:31 - Test Case Success :clickHome
-2021-05-01 11:14:55,189  INFO [TestNG-test=Test-1] TestBase:25 - Test Case Started :clickJBKTextInNavBar
-2021-05-01 11:14:56,056  INFO [TestNG-test=Test-1] TestDownloadsPage:171 - clickJBKTextInNavBar() ->passed
-2021-05-01 11:14:56,058  INFO [TestNG-test=Test-1] TestBase:31 - Test Case Success :clickJBKTextInNavBar
-2021-05-01 11:14:56,061  INFO [TestNG-test=Test-1] TestBase:25 - Test Case Started :clickOnlineText
-2021-05-01 11:14:56,223  INFO [TestNG-test=Test-1] TestDownloadsPage:180 - clickOnlineText() ->passed
-2021-05-01 11:14:56,224  INFO [TestNG-test=Test-1] TestBase:31 - Test Case Success :clickOnlineText
-2021-05-01 11:14:56,227  INFO [TestNG-test=Test-1] TestBase:25 - Test Case Started :clickFooter
-2021-05-01 11:15:10,371  INFO [TestNG-test=Test-1] TestDownloadsPage:212 - clickFooter() ->passed
-2021-05-01 11:15:10,373  INFO [TestNG-test=Test-1] TestBase:31 - Test Case Success :clickFooter
-2021-05-01 11:15:10,376  INFO [TestNG-test=Test-1] TestBase:25 - Test Case Started :clickLogout
-2021-05-01 11:15:12,184  INFO [TestNG-test=Test-1] TestDownloadsPage:221 - clickLogout() ->passed
-2021-05-01 11:15:12,185  INFO [TestNG-test=Test-1] TestBase:31 - Test Case Success :clickLogout
-2021-05-01 11:15:12,188  INFO [TestNG-test=Test-1] TestBase:25 - Test Case Started :verifyLogoutText
-2021-05-01 11:15:12,242  INFO [TestNG-test=Test-1] TestDownloadsPage:229 - verifyLogoutText() ->passed
-2021-05-01 11:15:12,244  INFO [TestNG-test=Test-1] TestBase:31 - Test Case Success :verifyLogoutText
-2021-05-01 11:15:13,338  INFO [main] TestBase:70 - Suit Finished !!!!
+2021-05-02 10:04:44,784  INFO [main] ClassITestListener:63 - Suit Started !!!!
+2021-05-02 10:04:44,810  INFO [main] TestBase:33 - Initializing Browser
+2021-05-02 10:05:14,169  INFO [main] TestBase:36 - Chrome Browser Opened
+2021-05-02 10:05:19,798  INFO [main] TestBase:45 - JBK Offline Website URL Launched
+2021-05-02 10:05:26,729  INFO [main] TestDownloadsPage:41 - DashboardPage initialized
+2021-05-02 10:05:26,837  INFO [TestNG-test=Test-1] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestIndexPage1]login
+2021-05-02 10:05:26,838  INFO [TestNG-test=Test-1] TestBase:33 - Initializing Browser
+2021-05-02 10:05:36,881  INFO [TestNG-test=Test-1] TestBase:36 - Chrome Browser Opened
+2021-05-02 10:05:40,631  INFO [TestNG-test=Test-1] TestBase:45 - JBK Offline Website URL Launched
+2021-05-02 10:05:43,347  INFO [TestNG-test=Test-1] TestIndexPage1:20 - User Successfully login into the Application
+2021-05-02 10:05:44,597  INFO [TestNG-test=Test-1] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestIndexPage1]login
+2021-05-02 10:05:44,607  INFO [TestNG-test=Test-2] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTitle
+2021-05-02 10:05:44,697  INFO [TestNG-test=Test-2] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTitle
+2021-05-02 10:05:44,740  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyUsersText
+2021-05-02 10:05:45,087  INFO [TestNG-test=Test-3] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyUsersText
+2021-05-02 10:05:45,092  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyHome
+2021-05-02 10:05:45,189  INFO [TestNG-test=Test-3] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyHome
+2021-05-02 10:05:45,192  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyJBKTextInNavBar
+2021-05-02 10:05:45,237  INFO [TestNG-test=Test-3] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyJBKTextInNavBar
+2021-05-02 10:05:45,246  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyLeftBar
+2021-05-02 10:05:45,687  INFO [TestNG-test=Test-3] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyLeftBar
+2021-05-02 10:05:45,704  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyFooter
+2021-05-02 10:05:45,760  INFO [TestNG-test=Test-3] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyFooter
+2021-05-02 10:05:45,763  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyLogoutText
+2021-05-02 10:05:45,817  INFO [TestNG-test=Test-3] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyLogoutText
+2021-05-02 10:05:45,821  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyDownloadsListText
+2021-05-02 10:05:45,870  INFO [TestNG-test=Test-3] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]varifyDownloadsListText
+2021-05-02 10:05:45,873  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]clickLogoIMG
+2021-05-02 10:05:48,833  INFO [TestNG-test=Test-3] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]clickLogoIMG
+2021-05-02 10:05:48,839  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTextInTable
+2021-05-02 10:05:58,370  INFO [TestNG-test=Test-3] ClassIRetryAnalayzer:17 - 1 time @Test case is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@520a3426] output={null}]
+2021-05-02 10:05:58,503  INFO [TestNG-test=Test-3] ClassITestListener:53 - Test Case Skipped :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTextInTable
+2021-05-02 10:05:58,511  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTextInTable
+2021-05-02 10:06:05,677  INFO [TestNG-test=Test-3] ClassIRetryAnalayzer:17 - 2 time @Test case is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@520a3426] output={null}]
+2021-05-02 10:06:05,679  INFO [TestNG-test=Test-3] ClassITestListener:53 - Test Case Skipped :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTextInTable
+2021-05-02 10:06:05,681  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTextInTable
+2021-05-02 10:06:11,482  INFO [TestNG-test=Test-3] ClassIRetryAnalayzer:17 - 3 time @Test case is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@520a3426] output={null}]
+2021-05-02 10:06:11,487  INFO [TestNG-test=Test-3] ClassITestListener:53 - Test Case Skipped :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTextInTable
+2021-05-02 10:06:11,494  INFO [TestNG-test=Test-3] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTextInTable
+2021-05-02 10:06:17,306  INFO [TestNG-test=Test-3] ClassIRetryAnalayzer:17 - 4 time @Test case is Retryed !! [TestResult name=verifyTextInTable status=FAILURE method=TestDownloadsPage.verifyTextInTable()[pri:10, instance:com.TestClasses.TestDownloadsPage@520a3426] output={null}]
+2021-05-02 10:06:17,309  INFO [TestNG-test=Test-3] ClassITestListener:34 - Test Case Failed :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTextInTable
+2021-05-02 10:06:17,319  INFO [TestNG-test=Test-3] ClassITestListener:34 - Test Case Failed :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyTextInTable
+2021-05-02 10:06:17,328  INFO [TestNG-test=Test-1] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]clickImages
+2021-05-02 10:06:28,249  INFO [TestNG-test=Test-1] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]clickImages
+2021-05-02 10:06:28,252  INFO [TestNG-test=Test-1] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]clickHome
+2021-05-02 10:06:28,900  INFO [TestNG-test=Test-1] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]clickHome
+2021-05-02 10:06:28,902  INFO [TestNG-test=Test-1] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]clickJBKTextInNavBar
+2021-05-02 10:06:30,654  INFO [TestNG-test=Test-1] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]clickJBKTextInNavBar
+2021-05-02 10:06:30,659  INFO [TestNG-test=Test-1] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]clickOnlineText
+2021-05-02 10:06:30,826  INFO [TestNG-test=Test-1] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]clickOnlineText
+2021-05-02 10:06:30,832  INFO [TestNG-test=Test-1] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]clickFooter
+2021-05-02 10:06:49,182  INFO [TestNG-test=Test-1] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]clickFooter
+2021-05-02 10:06:49,184  INFO [TestNG-test=Test-1] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]clickLogout
+2021-05-02 10:06:50,112  INFO [TestNG-test=Test-1] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]clickLogout
+2021-05-02 10:06:50,116  INFO [TestNG-test=Test-1] ClassITestListener:23 - Test Case Started :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyLogoutText
+2021-05-02 10:06:50,162  INFO [TestNG-test=Test-1] ClassITestListener:29 - Test Case Success :[TestClass name=class com.TestClasses.TestDownloadsPage]verifyLogoutText
+2021-05-02 10:06:52,049  INFO [main] ClassITestListener:68 - Suit Finished !!!!

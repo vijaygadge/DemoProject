@@ -25,11 +25,12 @@ public class TestUsefulLinksPage extends TestBase
 	WebDriver driver;
 	DashboardPage dp=null;
 	UsefulLinksPage ul=null;
+	private Logger log=Logger.getLogger(TestUsefulLinksPage.class);
+	
 	@BeforeSuite
 	public void setUp()
 	{
 		driver=initialization();
-		log=Logger.getLogger(TestUsefulLinksPage.class);
 		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("123456");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
@@ -49,7 +50,6 @@ public class TestUsefulLinksPage extends TestBase
 	{
 		String title=driver.getTitle();
 		Assert.assertEquals(title,"JavaByKiran | Useful Links");
-		log.info("verifyTitle()->passed");		
 	}
 	
 	@Test(priority=2,dependsOnMethods="verifyTitle")
@@ -58,7 +58,6 @@ public class TestUsefulLinksPage extends TestBase
 		String h1 = ul.headingText();
 		String h="Useful Links";
 		Assert.assertEquals(h1,h);
-		log.info("varifyUsersText()->passed");
 	}
 	
 	@Test(priority=3,dependsOnMethods="verifyTitle")
@@ -67,7 +66,6 @@ public class TestUsefulLinksPage extends TestBase
 		String home = ul.olTagText();
 		String home2="Home Useful Links";
 		Assert.assertEquals(home,home2);
-		log.info("varifyHome()->passed");
 	}
 	
 	@Test(priority=4,dependsOnMethods="verifyTitle")
@@ -76,7 +74,6 @@ public class TestUsefulLinksPage extends TestBase
 		String A = ul.jbkText();
 		String B="Java By Kiran";
 		Assert.assertEquals(A,B);
-		log.info("varifyJBKTextInNavBar()->passed");
 	}
 	
 	@Test(priority=5,dependsOnMethods="verifyTitle")
@@ -93,7 +90,6 @@ public class TestUsefulLinksPage extends TestBase
 				"Downloads\n" + 
 				"Logout";
 		Assert.assertEquals(A,B);
-		log.info("varifyLeftBar()->passed");
 	}
 	
 	@Test(priority=6,dependsOnMethods="verifyTitle")
@@ -103,7 +99,6 @@ public class TestUsefulLinksPage extends TestBase
 		String t2="Design for Selenium Automation Test V 2.3.0\n" + 
 				"Copyright © 2005-2019 JavaByKiran. All rights reserved.";
 		Assert.assertEquals(t1,t2);
-		log.info("varifyFooter()->passed");
 	}
 	
 	@Test(priority=7)
@@ -112,7 +107,6 @@ public class TestUsefulLinksPage extends TestBase
 		String logout =ul.verifyLogout();
 		String logout2="LOGOUT";
 		Assert.assertEquals(logout,logout2);
-		log.info("varifyLogoutText()->passed");
 	}
 	
 	@Test(priority=8)
@@ -121,7 +115,6 @@ public class TestUsefulLinksPage extends TestBase
 		String text1=ul.verifyUserListText();
 		String text2="* Internet Required";
 		Assert.assertEquals(text1,text2);
-		log.info("varifyUserListText()->passed");
 	}
 	
 	@Test(priority=9,dependsOnMethods="verifyTitle")
@@ -130,7 +123,6 @@ public class TestUsefulLinksPage extends TestBase
 		ul.clickHome();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/links.html#");
-		log.info("clickHome()->passed");
 	}
 	
 	@Test(priority=10,dependsOnMethods="verifyTitle")
@@ -139,9 +131,8 @@ public class TestUsefulLinksPage extends TestBase
 		//driver.findElement(By.xpath("//b[text()='Java By Kiran']")).click();
 		ul.clickjbkText();
 		String actual=driver.getCurrentUrl();
-		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/dashboard.html");
 		driver.navigate().back();
-		log.info("clickJBKTextInNavBar()->passed");
+		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/dashboard.html");
 	}
 	
 	@Test(priority=11,dependsOnMethods="verifyTitle")
@@ -150,7 +141,6 @@ public class TestUsefulLinksPage extends TestBase
 		ul.clickOnlineText();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/links.html#");
-		log.info("clickOnlineText()->passed");
 	}
 	
 	@Test(priority=12,dependsOnMethods="verifyTitle")
@@ -194,14 +184,12 @@ public class TestUsefulLinksPage extends TestBase
 		Robot robot=new Robot();
 		robot.keyPress(KeyEvent.VK_DOWN);
 		robot.keyPress(KeyEvent.VK_ENTER);
-		log.info("clickIMG()->passed");
 	}
 	
 	@Test(priority=14)
 	public void verifyTextInTable() throws Exception
 	{	
 		ul.textInTable();
-		log.info("verifyTextInTable()->passed");
 	}
 	
 	@Test(priority=15)
@@ -210,7 +198,6 @@ public class TestUsefulLinksPage extends TestBase
 		ul.clickLogout();
 		String actual=driver.getCurrentUrl();
 		Assert.assertEquals(actual,"file:///C://Offline%20Website//Offline%20Website/pages/examples/logout.html");
-		log.info("clickLogout()->passed");
 	}
 	
 	@Test(priority=16,dependsOnMethods="clickLogout")
@@ -218,6 +205,5 @@ public class TestUsefulLinksPage extends TestBase
 	{	
 		String logoutText=ul.logoutText();
 		Assert.assertEquals(logoutText,"Logout successfully");
-		log.info("verifyLogoutText()->passed");
 	}
 }
